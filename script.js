@@ -69,7 +69,7 @@ function function_c(){
 function result(){
 var sentence = "<br><br><br><b>Right Answers:</b>";
 for(var i = 0; i<10; i++){
-   sentence = sentence + "<br><br><br>" + "<b>" + questionsweb[i] + "</b>" + "<br>Right answer:" + rightAnswers[i] + "<br>";
+   sentence = sentence + "<br><br><br>" + "<b>" + questionsweb[i] + "</b>" + "<br>Right answer: " + rightAnswers[i] + "<br>";
 }
 document.getElementById("results").innerHTML = sentence;
     var z = localStorage.getItem("score");
