@@ -5,6 +5,7 @@ var questionsweb = ["Which is not a html tag:\n", "Output of the code:<br>var a 
 var aaa = ["&lta&gt", "5", "C#", "Cascate Style Sheets", "&ltlink&gt", "onclick", "shadow-set:", ".innerHTML", "3", "False"];
 var bbb = ["&ltcenter&gt", "0", "React.js", "Concise Style Sheets", "&ltfont&gt", "onload", "object-shadow", ".getValue()", "2", "True"];
 var ccc = ["&ltcompile&gt", "undefined", "jQuery", "Cascading Style Sheets", "&ltimport&gt", "onturn", "box-shadow:", ".valueOf", "1", "It needs other kind of closing tag"];
+var rightAnswers = ["&ltcompile&gt", "0", "C#", "Cascading Style Sheets", "&ltlink&gt", "onturn", "box-shadow", ".innerHTML", "3", "False"];
 var number = 0;
 var answer = 0;
 var right = [3, 2, 1, 3, 1, 3, 3, 1, 1, 1];
@@ -66,6 +67,11 @@ function function_c(){
  update();
 }
 function result(){
+var sentence = "<br><br><br><b>Right Answers:</b>";
+for(var i = 0; i<10; i++){
+   sentence = sentence + "<br><br><br>" + "<b>" + questionsweb[i] + "</b>" + "<br>Right answer:" + rightAnswers[i] + "<br>";
+}
+document.getElementById("results").innerHTML = sentence;
     var z = localStorage.getItem("score");
     document.getElementById("title").innerHTML = "" + z + "/10";
     if(z == 10){
@@ -80,4 +86,7 @@ function result(){
     if(z < 5){
         document.getElementById("ida").innerHTML = "Don't worry! You're just getting started on web dev. You've got a lot to learn but already know your path.";
     }
+}
+
+function create(){
 }
