@@ -22,7 +22,14 @@ body{
   left: 65%;
 }
 .slideshow{
-    
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 18px;
+}
+.slideshowm{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 18px;
 }
 .text{
     margin-left: 15px;

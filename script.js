@@ -87,6 +87,3 @@ document.getElementById("results").innerHTML = sentence;
         document.getElementById("ida").innerHTML = "Don't worry! You're just getting started on web dev. You've got a lot to learn but already know your path.";
     }
 }
-
-function create(){
-}
