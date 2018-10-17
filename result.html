@@ -17,9 +17,26 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
     <script src="script.js"></script>
 </head>
+<script>
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/es_LA/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 <body onload="result()">
     <div class="header">
-        <a href="index.html"><img src="logo.jpg" class="logo"></a>
+        <a href="main.html"><img src="logo.jpg" class="logo"></a>
         <h1 class="main">the/code/challenge/</h1>
         <a href="quiz.html"><button class="menu">web dev quiz</button></a>
         </div>
@@ -31,11 +48,14 @@
     <center>
     <center>
         <center>
-           <div class="slideshow">     
+           <div class="slideshowm">
                <div class="forma">
                       <h1 id="title">Web dev quiz</h1>
                       <a id="ida" class="description">Prove you're the real deal when it comes to web dev</a>
-                      <a id="results" class="description"></a>
+                      <br>
+                      <br>
+                      <br>
+                      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Frobotinc17.github.io%2Fthecodechallenge%2F&layout=button_count&size=large&mobile_iframe=true&width=135&height=28&appId" width="135" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                      <a id="results" class="description"></a>
                       <br>
                       <br>
                       <br>
