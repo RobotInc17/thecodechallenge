@@ -86,7 +86,6 @@ for(var i = 0; i<10; i++){
 }
 document.getElementById("results").innerHTML = sentence;
     var z = localStorage.getItem("score");
-    document.getElementById("title").innerHTML = "" + z + "/10";
     if(z == 10){
         document.getElementById("ida").innerHTML = "10/10 - it certainly speaks for itself! You seem to have what it takes to be a web developer!";
     }
