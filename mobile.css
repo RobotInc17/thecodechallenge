@@ -275,8 +275,11 @@ hrefa{
   background-color: black;
 }
 .gray{
+  font-size: 70px;
   background-color: lightgray;
- }
- .blue{
+  width: 300px;
+}
+.blue{
   background-color: #4286f4;
+  font-size: 30px;
  }

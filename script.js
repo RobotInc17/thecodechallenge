@@ -68,7 +68,7 @@ function function_c(){
 }
 function result(){
         var elem = document.getElementById("myBar");   
-        var width = 20;
+        var width = 0;
         var id = setInterval(frame, 10);
         function frame() {
             var result = localStorage.getItem("score")*10;
