@@ -67,6 +67,19 @@ function function_c(){
  update();
 }
 function result(){
+        var elem = document.getElementById("myBar");   
+        var width = 20;
+        var id = setInterval(frame, 10);
+        function frame() {
+            var result = localStorage.getItem("score")*10;
+          if (width >= result) {
+            clearInterval(id);
+          } else {
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1  + '%';
+          }
+        }  
 var sentence = "<br><br><br><b>Right Answers:</b>";
 for(var i = 0; i<10; i++){
    sentence = sentence + "<br><br><br>" + "<b>" + questionsweb[i] + "</b>" + "<br>Right answer: " + rightAnswers[i] + "<br>";
@@ -85,5 +98,5 @@ document.getElementById("results").innerHTML = sentence;
     }
     if(z < 5){
         document.getElementById("ida").innerHTML = "Don't worry! You're just getting started on web dev. You've got a lot to learn but already know your path.";
-    }
+    }   
 }
