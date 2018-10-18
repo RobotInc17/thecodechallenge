@@ -152,6 +152,9 @@ body{
   cursor: pointer;
   margin-right: 70px;
 }
+.letsgo:hover{
+  background: #aeaeaf;
+  color: white;}
 .letsgot {
     font-family: "Roboto", sans-serif;
     outline: 0;
@@ -280,4 +283,15 @@ body{
   left: 50%;
   right: 85%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.format{
+  background: #FFFFFF;
+    width: 300px;
+    height: 50%;
+    padding: 45px;
+    margin-left: 30%;
+    top: 35%;
+    left: 50%;
+    right: 85%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
